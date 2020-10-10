@@ -94,8 +94,8 @@ class Die //models one single dice cube
       fill(faces[diceNumber-1][i] * 255);
       
       //dot
-      //(i%3) * -15 because every collumn went a bit more downwards 
-      //they didn't go down in processing only in github??
+      //(i%3) because every collumn went a bit more upwards 
+      //they didn't slant in processing only in github??
       ellipse(myX + dotSpace + (dotSpace * (i%3)), myY + dotSpace + dotSpace * (int)(i/3) + (i%3), 25, 25);
     }
   }
