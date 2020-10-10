@@ -39,7 +39,7 @@ void draw()
   textSize(64);
   fill(255);
   textAlign(CENTER);
-  text("total" + 1/3, 500, 860);
+  text("total", 500, 860);
   text(sum, 500, 925);
 }
 void mousePressed()
@@ -94,6 +94,8 @@ class Die //models one single dice cube
       fill(faces[diceNumber-1][i] * 255);
       
       //dot
+      //(i%3) * -15 because every collumn went a bit more downwards 
+      //they didn't go down in processing only in github??
       ellipse(myX + dotSpace + (dotSpace * (i%3)), myY + dotSpace + dotSpace * (i/3) + (i%3) * -15, 25, 25);
     }
   }
