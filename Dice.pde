@@ -12,7 +12,6 @@ void setup()
   size(1500, 1000);
 }
 
-
 void draw()
 {
   background(0);
@@ -74,8 +73,6 @@ class Die //models one single dice cube
     myX = x;
     myY = y;
   }
-
-
 
   void roll()
   {
