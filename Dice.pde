@@ -96,7 +96,7 @@ class Die //models one single dice cube
       //dot
       //(i%3) * -15 because every collumn went a bit more downwards 
       //they didn't go down in processing only in github??
-      ellipse(myX + dotSpace + (dotSpace * (i%3)), myY + dotSpace + dotSpace * (i/3) + (i%3) * -15, 25, 25);
+      ellipse(myX + dotSpace + (dotSpace * (i%3)), myY + dotSpace + dotSpace * (int)(i/3), 25, 25);
     }
   }
 }
