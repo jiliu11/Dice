@@ -1,5 +1,5 @@
 int rows = 4;
-int columns = 7;
+int columns = 5;
 
 //space between die
 int dieSpace = 20;
@@ -9,7 +9,7 @@ int sum;
 void setup()
 {
   noLoop();
-  size(1500, 1000);
+  size(1000, 1000);
 }
 
 void draw()
@@ -19,7 +19,7 @@ void draw()
   sum = 0;
   
   //space between the edges of the canvas and the die
-  int leftRightMarginSpace = (1500-(160 * columns + dieSpace * (columns - 1)))/2;
+  int leftRightMarginSpace = (1000-(160 * columns + dieSpace * (columns - 1)))/2;
   
   //space between top of canvas and 200 units from the bottom
   //bottom part for words
@@ -39,8 +39,8 @@ void draw()
   textSize(64);
   fill(255);
   textAlign(CENTER);
-  text("total", 750, 860);
-  text(sum, 750, 925);
+  text("total", 500, 860);
+  text(sum, 500, 925);
 }
 void mousePressed()
 {
