@@ -94,7 +94,7 @@ class Die //models one single dice cube
       fill(faces[diceNumber-1][i] * 255);
       
       //dot
-      ellipse(myX + dotSpace + (dotSpace * (i%3)), myY + dotSpace + (dotSpace * (i/3)) * -25, 25, 25);
+      ellipse(myX + dotSpace + (dotSpace * (i%3)), myY + dotSpace + dotSpace * (i/3) + (i%3) * -25, 25, 25);
     }
   }
 }
