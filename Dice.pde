@@ -39,7 +39,7 @@ void draw()
   textSize(64);
   fill(255);
   textAlign(CENTER);
-  text("total", 500, 860);
+  text("total" + 1/3, 500, 860);
   text(sum, 500, 925);
 }
 void mousePressed()
